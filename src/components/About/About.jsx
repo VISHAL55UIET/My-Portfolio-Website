@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Tilt from "react-parallax-tilt";
-import profileImage from "../../assets/myimage.jpg"; // ✅ Fixed import path
+import profileImage from "../../assets/myimage.jpg"; // Keep your image path
 
 const About = () => {
   return (
@@ -17,19 +17,14 @@ const About = () => {
           </h1>
 
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
-            Shashank Upadhyay
+            Vishal Singh
           </h2>
 
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#8245ec] mb-4 leading-tight">
             <span className="text-white mr-2">I am a</span>
             <span className="text-[#8245ec]">
               <Typewriter
-                words={[
-                  "Full Stack Developer",
-                  "App Developer",
-                  "UI/UX Designer",
-                  "Coder",
-                ]}
+                words={["Full Stack Developer", "Web Developer", "UI/UX Designer", "Coder"]}
                 loop={0}
                 cursor
                 cursorStyle="|"
@@ -41,14 +36,7 @@ const About = () => {
           </h3>
 
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a passionate full-stack developer with a strong foundation in
-            web development and modern technologies. I recently completed my
-            Bachelor's degree in Computer Science and have built several
-            personal projects using the MERN stack (MongoDB, Express.js, React,
-            and Node.js). During my academic journey, I completed an internship
-            and gained practical skills. I’m eager to apply my knowledge in a
-            professional environment, contribute to impactful projects, and
-            continuously grow as a developer.
+            I am a passionate web developer with experience in building modern and responsive web applications. I enjoy creating interactive UI and learning new technologies to improve my skills.
           </p>
 
           <a
@@ -68,21 +56,18 @@ const About = () => {
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem]
-        md:h-[30rem] border-4 border-purple-600 rounded-full "
-          
-          tiltMaxAngleX={20}
-          tiltMaxAngleY={20}
-          perspective={1000}
-          scale={1.05}
-          transitionSpeed={1000}
-          gyroscope={true}
-
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-600 rounded-full"
+            tiltMaxAngleX={20}
+            tiltMaxAngleY={20}
+            perspective={1000}
+            scale={1.05}
+            transitionSpeed={1000}
+            gyroscope={true}
           >
             <img
               src={profileImage}
-              alt="Shashank Upadhyay"
-              className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)] "
+              alt="Vishal Singh"
+              className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
             />
           </Tilt>
         </div>

@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_8ctcxe1",        // ✅ Replace with your actual service ID
-        "template_667e2tc",       // ✅ Replace with your actual template ID
+        "service_28co9jg",       // ✅ Your Service ID
+        "template_d5hej4q",      // ✅ Your Template ID
         form.current,
-        "wSf-TLJflEB6OGD9X"       // ✅ Replace with your public key
+        "JHGPApx_8QC88ZZUl"     // ✅ Your Public Key
       )
       .then(
         () => {
@@ -51,7 +51,7 @@ const Contact = () => {
       id="contact"
       className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]"
     >
-      <ToastContainer /> {/* ✅ Must be inside or outside root App, but only once! */}
+      <ToastContainer /> {/* ✅ Must be included once */}
 
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">CONTACT</h2>

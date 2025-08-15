@@ -1,7 +1,6 @@
 import React from "react";
 import {
-  FaFacebook,
-  FaTwitter,
+  FaGithub,
   FaLinkedin,
   FaInstagram,
   FaYoutube,
@@ -15,12 +14,14 @@ const Footer = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center ">
         <h2 className="text-xl font-semibold text-purple-500">
-          Shashank Upadhyay
+           Vishal Singh
         </h2>
+
         {/* navigation links */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4 ">
           {[
@@ -39,31 +40,15 @@ const Footer = () => {
             </button>
           ))}
         </nav>
-        {/* Social  Media Icons */}
+
+        {/* Social Media Icons */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            // {
-            //   icon: <FaFacebook />,
-            //   link: "https://www.facebook.com/tarun.kaushik.3511041/",
-            // },
-            // {
-            //   icon: <FaTwitter />,
-            //   link: "https://twitter.com/CodingMaster6?s=09",
-            // },
-            {
-              icon: <FaLinkedin />,
-              link: "https://www.linkedin.com/in/shashank-upadhyay-b95599287/",
-            },
-            {
-              icon: <FaInstagram />,
-              link: "https://www.instagram.com/shashank_upadhyay__001/",
-            },
-            {
-              icon: <FaYoutube />,
-              link: "https://www.youtube.com/channel/UChMNr4iaIk7J2A4MDWJZzrA",
-            },
-          ]
-          .map((item, index) => (
+            { icon: <FaGithub />, link: "https://github.com/VISHAL55UIET" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/vishal-singh-5b052828a/" },
+            { icon: <FaInstagram />, link: "https://www.instagram.com/singhvishall_/" },
+            { icon: <FaYoutube />, link: "https://youtube.com/@vishal__v001?si=ErdQ7Edh3Cz4z_J5" },
+          ].map((item, index) => (
             <a
               key={index}
               href={item.link}
@@ -73,11 +58,12 @@ const Footer = () => {
             >
               {item.icon}
             </a>
-            ))}
+          ))}
         </div>
-        {/* CpyRight Text */}
+
+        {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Shashank Upadhyay. All rights reserved.
+          © 2025 Vishal Singh. All rights reserved.
         </p>
       </div>
     </footer>

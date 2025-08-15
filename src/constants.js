@@ -1,5 +1,4 @@
 // Cleaned Portfolio Data Configuration
-// Removed unused logos and redundant info for clarity and optimization
 
 import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
@@ -78,31 +77,48 @@ export const SkillsInfo = [
   },
 ];
 
+export const experiences = [
+  {
+    id: 1,
+    role: "Full Stack Engineer Intern",
+    company: "Blustock",
+    period: "Jun 2025 - Present",
+    description: [
+      "Worked on full-stack web development using MERN stack.",
+      "Built and maintained features for internal tools.",
+      "Collaborated in agile environment with team.",
+      "Improved website performance and implemented responsive UI.",
+    ],
+    companyLink: "https://www.blustock.com", // optional
+  },
+];
+
+
 export const education = [
   {
     id: 1,
     img: bsaLogo,
     school: 'Csjm University, Kanpur',
     date: 'July 2023 - July 2027',
-    grade: '9.24 CPI',
+    grade: '8.58 CPI',
     desc: "Bachelor's degree in Computer Science (B.Tech). Learned DSA, Web Dev, DBMS, and worked on practical projects.",
     degree: 'Bachelor of Technology - BTECH (Computer Science)',
   },
   {
     id: 2,
     img: Logo,
-    school: 'Varanasi Public School, Varanasi',
+    school: 'Shivam Public School, Mirzapur',
     date: 'Apr 2020 - Mar 2021',
-    grade: '85.4%',
+    grade: '84.4%',
     desc: 'Class 12 with PCM and Computer Science under CBSE board.',
     degree: 'CBSE (XII)',
   },
   {
     id: 3,
     img: vpsLogo,
-    school: 'Raj English School, Varanasi',
+    school: 'Shivam Public School, Mirzapur',
     date: 'Apr 2018 - Mar 2019',
-    grade: '88.4%',
+    grade: '85.4%',
     desc: 'Class 10 with Science and Computer under CBSE board.',
     degree: 'CBSE (X)',
   },
@@ -115,8 +131,8 @@ export const projects = [
     description: 'Search and display GitHub profile info with stats and repos.',
     image: githubdetLogo,
     tags: ['React JS', 'API', 'JavaScript'],
-    github: 'https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS',
-    webapp: 'https://githubprofiledetective.netlify.app/',
+    github: 'https://github.com/VISHAL55UIET',
+    webapp: 'https://github.com/VISHAL55UIET', // If live version exists, replace with your Netlify/Vercel link
   },
   {
     id: 1,
@@ -124,8 +140,8 @@ export const projects = [
     description: 'Quiz platform for GATE/UGC NET practice with analytics.',
     image: csprepLogo,
     tags: ['React JS', 'Node.js', 'MongoDB', 'Express'],
-    github: 'https://github.com/codingmastr/CSPrep',
-    webapp: 'https://csprep.netlify.app/',
+    github: 'https://github.com/VISHAL55UIET',
+    webapp: 'https://github.com/VISHAL55UIET',
   },
   {
     id: 2,
@@ -133,8 +149,8 @@ export const projects = [
     description: 'Get movie suggestions by genre and trends.',
     image: movierecLogo,
     tags: ['React JS', 'API'],
-    github: 'https://github.com/codingmastr/Movie-Recommendation-App',
-    webapp: 'https://movie-recommendation-app-jet.vercel.app/',
+    github: 'https://github.com/VISHAL55UIET',
+    webapp: 'https://github.com/VISHAL55UIET',
   },
   {
     id: 3,
@@ -142,8 +158,8 @@ export const projects = [
     description: 'NPM tool to validate email formats in web forms.',
     image: npmLogo,
     tags: ['React JS', 'Node.js', 'NPM'],
-    github: 'https://github.com/codingmastr/cmtk-email-validator',
-    webapp: 'https://www.npmjs.com/package/cmtk-email-validator',
+    github: 'https://github.com/VISHAL55UIET',
+    webapp: 'https://github.com/VISHAL55UIET',
   },
   {
     id: 4,
@@ -151,8 +167,8 @@ export const projects = [
     description: 'JS-based extension to manage and alert tasks.',
     image: taskremLogo,
     tags: ['JavaScript', 'Chrome Extension'],
-    github: 'https://github.com/codingmastr/Task-Reminder-Tool',
-    webapp: 'chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci',
+    github: 'https://github.com/VISHAL55UIET',
+    webapp: 'chrome://extensions', // Placeholder
   },
   {
     id: 5,
@@ -160,8 +176,8 @@ export const projects = [
     description: 'Official digital agency website with animations.',
     image: webverLogo,
     tags: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/codingmastr/Webverse-Digital',
-    webapp: 'https://webversedigital.com/',
+    github: 'https://github.com/VISHAL55UIET',
+    webapp: 'https://github.com/VISHAL55UIET',
   },
   {
     id: 6,
@@ -169,8 +185,8 @@ export const projects = [
     description: 'Ed-tech site for blogs, notes, interviews, and paid content.',
     image: cmLogo,
     tags: ['React JS', 'Node.js', 'MongoDB', 'Express'],
-    github: 'https://codingmasterweb.in/',
-    webapp: 'https://codingmasterweb.in/',
+    github: 'https://github.com/VISHAL55UIET',
+    webapp: 'https://github.com/VISHAL55UIET',
   },
   {
     id: 7,
@@ -178,8 +194,8 @@ export const projects = [
     description: 'Find and download high-quality images via API.',
     image: imagesearchLogo,
     tags: ['React JS', 'API'],
-    github: 'https://github.com/codingmastr/Image-Search-App',
-    webapp: 'https://imagsearch.netlify.app/',
+    github: 'https://github.com/VISHAL55UIET',
+    webapp: 'https://github.com/VISHAL55UIET',
   },
   {
     id: 8,
@@ -187,7 +203,13 @@ export const projects = [
     description: 'Remove image backgrounds and get transparent outputs.',
     image: removebgLogo,
     tags: ['React JS', 'API'],
-    github: 'https://github.com/codingmastr/Image-Background-Remover',
-    webapp: 'https://removeyourbg.netlify.app/',
+    github: 'https://github.com/VISHAL55UIET',
+    webapp: 'https://github.com/VISHAL55UIET',
   },
 ];
+
+// Add your personal social links
+export const socialLinks = {
+  github: 'https://github.com/VISHAL55UIET',
+  linkedin: 'https://www.linkedin.com/in/vishal-singh-5b052828a/',
+};
